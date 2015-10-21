@@ -11,20 +11,20 @@ Both are included in node_modules folder so no extra downloads are required.
 
 ### Steps to run the program
 
-1. Clone the repository
+1. Clone the repository `git clone git@github.com:diegogadens/betting-host`
 
-2. Enter the folder
+2. Enter the folder `cd betting-host`
 
-3. Run it:
+3. Run it: (the commands below assume you are in a unix like terminal, linux or macOS)
 
-	You have 2 options to enter data (it reads data from stdin).
+    You have 2 options to enter data (it reads data from stdin).
 
      * Option 1 (Easier and faster)
         * Edit the `input.txt` file. It is in the root directory of the application. This file already have an input dataset to run the tests.
         * To run the program with this input use the following command in the root directory of the application
             **ATENTION: If you edit the file, be sure to keep the empty line after the result line (the last data line)**  
         ```
-        user@host$ node index.js < input.txt [Enter]
+        node index.js < input.txt [Enter]
         ```
         If you use the provided input.txt file, you should see the following result for the dividends:
         ```
@@ -35,10 +35,10 @@ Both are included in node_modules folder so no extra downloads are required.
         Exacta:2,3:$2.43
         ```
 
-	* Option 2: 
-		* Run `node index.js [Enter]`, and:
-		* Insert lines of data directly in the terminal, followed by an [Enter] after each line
-		```
+    * Option 2: 
+        * Run `node index.js [Enter]`, and:
+        * Insert lines of data directly in the terminal, followed by an [Enter] after each line
+        ```
         user@host$ node index.js [Enter]
         > Bet:W:1:1 [Enter]
         > Bet:W:1:3 [Enter]
@@ -56,18 +56,18 @@ Both are included in node_modules folder so no extra downloads are required.
         ```
         When you insert a Result line (always the last one). The program closes de stdin lineReader and calculates the results. For the dataset above, the results are the following:
       
-      	```
+        ```
         Win:2:$2.55
         Place:2:$0.73
         Place:3:$2.30
         Place:1:$2.08
         Exacta:2,3:$1.61
-		```
+        ```
 
 ### Running the tests
 This program contains some automated tests. Everything it needs to test itself is included in the repository, to run the automated tests, run the following command:
 ````
-user@host$ npm test
+npm test
 ````
 You should see something like that:
 ````
@@ -118,7 +118,7 @@ You should see something like that:
 ### Running the code coverage tool
 This program also contains a code coverage tool. To see it in action, ruin the following command:
 ```
-user@host$ npm run coverage
+npm run coverage
 ```
 You should see something like this:
 ```
@@ -134,6 +134,3 @@ Functions    : 100% ( 18/18 )
 Lines        : 92.74% ( 115/124 )
 ================================================================================
 ```
-
-
-	
