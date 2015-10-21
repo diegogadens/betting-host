@@ -1,0 +1,28 @@
+{
+  "name": "bettinghost",
+  "version": "1.0.0",
+  "description": "A module to calculate the dividends for a simplified form of Tote Betting",
+  "main": "bettinghost.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test",
+    "coverage": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- --ui bdd -R spec -t 5000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/diegogadens/betting-host"
+  },
+  "author": "Diego Gadens",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diegogadens/betting-host/issues"
+  },
+  "homepage": "https://github.com/diegogadens/betting-host",
+  "dependencies": {
+    "istanbul": "^0.4.0",
+    "mocha": "^2.3.3"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.0",
+    "mocha": "^2.3.3"
+  }
+}
