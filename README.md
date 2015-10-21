@@ -15,7 +15,7 @@ Both are included in node_modules folder so no extra downloads are required.
 
 2. Enter the folder `cd betting-host`
 
-3. Run it: (the commands below assume you are in a unix like terminal, linux or macOS)
+3. Run it: (the commands below assume you are in a unix like terminal, such as linux or macOS)
 
     You have 2 options to enter data (it reads data from stdin).
 
