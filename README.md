@@ -57,7 +57,7 @@ Both are included in node_modules folder so no extra downloads are required.
         When you insert a Result line (always the last one). The program closes de stdin lineReader and calculates the results. For the dataset above, the results are the following:
       
         ```
-        Win:2:$2.55
+        Win:2:$2.76
         Place:2:$0.73
         Place:3:$2.30
         Place:1:$2.08
